@@ -1,0 +1,71 @@
+body, html {
+    margin : 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Oswald-Medium;
+    src        : url(../fonts/Oswald-Medium.ttf);
+}
+
+body{   
+    background     :#000 url("../images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height     : 100%;
+  /*  height: 100%;    
+    width: 100%;*/
+}
+.fr-logo{
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+    height         : 80vh;
+    justify-content: center;
+}
+.fr-logo img{
+    height     : 350px;
+    padding-top: 20vh;
+    width      : 350px;
+}
+.fr-title{    
+    align-items    : center;
+    color          : white;
+    display        : flex;
+    height         : 20vh;    
+    justify-content: center;
+}
+.fr-title h3{
+    font-family   : Oswald-Medium;
+    font-size     : 18px;
+    font-weight   : 500;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 360px) {
+    body{
+        background:#000 url("../images/326x489-bg.jpg") no-repeat center center fixed;
+        background-size: cover;
+        min-height     : 100%;
+    }
+    .fr-logo{        
+        height: 68vh;        
+    }
+    .fr-logo img{
+        height: 200px;
+        width : 200px;
+    }
+}
+
+@media(min-width: 1024px) {  
+    .fr-logo{        
+        height: 65vh;        
+    }
+    .fr-logo img{
+        height: 350px;
+        width : 350px;
+    }
+    .fr-title h3{
+        font-size     : 20px;
+        font-weight   : 300;
+        padding-top   : 37vh;
+}
